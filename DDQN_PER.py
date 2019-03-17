@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 import random
 
 # Unity environment
-env = UnityEnvironment(file_name="C:\\Users\AL\Documents\GitHub\deep-reinforcement-learning\p1_navigation\Banana_Windows_x86_64\Banana.exe")
+# Change My_Path: e.g. C:\\Users\AL\Documents\GitHub\Example\
+env = UnityEnvironment(file_name="My_Path\Banana.exe")
 brain_name = env.brain_names[0]
 brain = env.brains[brain_name]
 action_size = brain.vector_action_space_size
