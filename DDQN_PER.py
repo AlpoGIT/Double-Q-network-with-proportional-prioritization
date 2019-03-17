@@ -180,7 +180,7 @@ for episode in range(1,M+1):
 
             #compute importance sampling weight, before the update
             w.append(priorities)
-            p_max = np.maximum(p_max, np.max(priorities)) #np.max(w)
+            p_max = np.max(w)
             np_w = (np.sum(w)/(len(w)*priorities)).reshape(-1,1)**beta
             np_w /= p_max
 
