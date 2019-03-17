@@ -35,13 +35,13 @@ env = UnityEnvironment(file_name="C:\\Users\AL\Documents\GitHub\deep-reinforceme
 * the SumTree class from [AI-blog/SumTree.py](https://github.com/jaromiru/AI-blog/blob/master/SumTree.py)
 * a modified version of the ReplayBuffer class from Udacity's DQN implementation [deep-reinforcement-learning/dqn/solution/dqn_agent.py](https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn).
 
-Run the *DDQN_PER* python file in order to train the agent. After being trained over 600 episodes or if the problem is solved, the code will plot the scores and the average score over the last 100 episodes. It will save the neural network weights in *checkpoint.pth* and the scores in *scores.txt*. During the execution of the program, the code writes the current episode, the average score over the last 100 episodes, the current epsilon (used in the $\epsilon-$greedy policy) and the maximum score. The agent should be able to solve the environment in approximatively 400 episodes.
+Run the *DDQN_PER* python file in order to train the agent. After being trained over 600 episodes or if the problem is solved, the code will plot the scores and the average score over the last 100 episodes. It will save the neural network weights in *checkpoint.pth* and the scores in *scores.txt*. During the execution of the program, the code writes the current episode, the average score over the last 100 episodes, the current epsilon (used in the $\epsilon-$greedy policy) and the maximum score. The agent should be able to solve the environment in approximatively 400 episodes (hidden layer unit number = 32, plain fully connected NN with two hidden layers)
 
 ```dos
-100/600 average score: 1.20     eps: 0.45       max_score: 10.00
-200/600 average score: 7.44     eps: 0.20       max_score: 14.00
-300/600 average score: 11.78    eps: 0.09       max_score: 19.00
-400/600 average score: 12.53    eps: 0.05       max_score: 24.00
-414/600 average score: 13.11    eps: 0.05       max_score: 24.00
+100/600 average score: 1.53     eps: 0.45       max_score: 9.00
+200/600 average score: 7.73     eps: 0.20       max_score: 15.00
+300/600 average score: 11.08    eps: 0.09       max_score: 20.00
+400/600 average score: 12.98    eps: 0.05       max_score: 22.00
+402/600 average score: 13.07    eps: 0.05       max_score: 22.00
 Solved!
 ```
